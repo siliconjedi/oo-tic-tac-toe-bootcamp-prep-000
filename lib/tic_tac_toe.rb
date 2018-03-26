@@ -118,6 +118,15 @@ class TicTacToe
     won?() || full?() || draw?()
   end
 
+  def winner ()
+    result = won?()
+    if !result
+      return nil;
+    end
+    win_index_1 = result[0]
+    return @board[win_index_1]
+  end
+
   
 
 end
