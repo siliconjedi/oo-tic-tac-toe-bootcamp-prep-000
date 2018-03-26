@@ -127,6 +127,15 @@ class TicTacToe
     return @board[win_index_1]
   end
 
-  
+  def play()
+    until over?() do
+      turn()
+    end
+    if won?()
+      puts "Congratulations #{winner()}!"
+    elsif draw?()
+      puts "Cat's Game!"
+    end
+  end
 
 end
