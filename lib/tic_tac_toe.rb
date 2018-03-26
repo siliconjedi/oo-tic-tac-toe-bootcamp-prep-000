@@ -30,6 +30,18 @@ class TicTacToe
     @board[index] = token
   end
   
+  def position_taken? (index)
+    if (@board[index] == " ")
+      return false
+    elsif (@board[index] == "")
+      return false
+    elsif (@board[index] == nil)
+      return false
+    else
+      return true
+    end
+  end
+  
   
   
 end
